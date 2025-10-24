@@ -1,220 +1,237 @@
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
 body {
-  font-family: "Poppins", sans-serif;
-  background: linear-gradient(180deg, #6534d6 0%, #3b2be6 100%);
-  padding: 2rem;
-  color: #333;
+  background-color: rgba(255, 3, 255, 0.945);
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  padding: 20px 0;
 }
 
 .container {
   max-width: 900px;
-  margin: auto;
-  background: #f8faff;
-  border-radius: 12px;
-  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
-  overflow: hidden;
+  margin: 0 auto;
+  background-color: white;
+  padding: 30px;
+  border-radius: 15px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
 }
 
 .main-header {
   text-align: center;
-  background: #fff;
-  padding: 1.5rem;
-  border-bottom: 1px solid #eee;
+  margin-bottom: 30px;
+  padding-bottom: 20px;
+  border-bottom: 3px solid #1a8bbc;
 }
 
 .main-header h1 {
-  font-weight: 600;
-  color: #333;
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: #1a8bbc;
+  margin-bottom: 10px;
 }
 
 .main-header p {
-  font-size: 0.9rem;
-  color: #777;
+  font-size: 1.1rem;
+  color: #666;
 }
 
 .card {
-  margin: 1.2rem;
-  padding: 1.5rem;
-  border-radius: 12px;
-  background: linear-gradient(135deg, #fffaf9, #ffeef3);
-
-  /* Ubah arah bayangan */
-  box-shadow: -5px 0px 0px rgba(23, 60, 242, 0.824);
-}
-
-.card-practice {
-  margin: 1.2rem;
-  padding: 1.5rem;
-  border-radius: 12px;
-  background: linear-gradient(120deg, #d74f34, #f4b2c5);
+  background-color: #f8f9fa;
+  border-left: 5px solid #1a8bbc;
+  border-radius: 10px;
+  padding: 25px;
+  margin-bottom: 25px;
 }
 
 .card h2 {
-  font-size: 1.5rem;
-  font-weight: 700;
-  color: #1e3a8a; /* biru elegan */
-  padding-bottom: 0.5rem;
-  margin-bottom: 1rem;
-  border-bottom: 3px solid #1d9bf0; /* garis biru tegas */
-  display: block;
+  color: #1a8bbc;
+  font-weight: bold;
+  margin-bottom: 15px;
+  padding-bottom: 10px;
+  border-bottom: 2px solid #e0e0e0;
 }
 
 .card h3 {
-  margin-top: 0.8rem;
+  color: #333;
+  font-weight: 600;
+  margin-top: 20px;
+  margin-bottom: 10px;
 }
 
-.card ul {
-  margin-top: 0.5rem;
-  margin-left: 1.5rem;
-  line-height: 1.6;
+.card h4 {
+  color: #333;
+  font-weight: 600;
+  margin-top: 15px;
+  margin-bottom: 10px;
 }
 
 .highlight {
-  background: linear-gradient(to right, #add8e6, #ffb6c1);
-  padding: 0.8rem 1rem;
+  background: linear-gradient(to right, #1b9ad183, #a602a668);
+  color: white;
+  padding: 15px 20px;
   border-radius: 8px;
-  margin-top: 0.8rem;
-  box-shadow: -5px 0px 0px rgba(242, 23, 23, 0.824);
+  margin: 15px 0;
+}
+
+.highlight p {
+  margin-bottom: 10px;
+}
+
+.highlight ul {
+  margin-bottom: 0;
+  padding-left: 20px;
 }
 
 pre {
-  background: #1e293b;
-  color: #e2e8f0;
-  padding: 1rem;
+  background-color: #2d2d2d;
+  color: #f8f8f2;
+  padding: 15px;
   border-radius: 8px;
   overflow-x: auto;
-  margin-top: 0.8rem;
+  margin: 15px 0;
+}
+
+code {
+  font-family: 'Courier New', monospace;
   font-size: 0.9rem;
 }
 
-table {
-  width: 100%;
-  border-collapse: collapse;
-  margin-top: 1rem;
-}
-
-th,
-td {
-  border: 1px solid #ddd;
-  padding: 0.6rem;
-  text-align: left;
-}
-
-th {
-  background: #f1f5f9;
-}
-
 .example-box {
-  border: 1.5px dashed #0553ef;
-  background: #f9fafb;
-  padding: 1rem;
-  border-radius: 8px;
+  border: 2px dashed #1a8bbc;
+  border-radius: 10px;
+  padding: 20px;
+  background-color: white;
+  margin-top: 15px;
 }
 
 .example-box h1 {
-  justify-content: center;
-  align-items: center;
-  display: flex;
+  font-size: 2rem;
+  margin-bottom: 10px;
+}
+
+.example-box h2 {
+  font-size: 1.5rem;
+  color: #1a8bbc;
+  border-bottom: 2px solid #1a8bbc;
+  padding-bottom: 5px;
+  margin-bottom: 10px;
+}
+
+.example-box h3 {
+  font-size: 1.3rem;
+  margin-bottom: 10px;
+}
+
+.example-box h4 {
+  font-size: 1.1rem;
+  margin-top: 15px;
+  margin-bottom: 8px;
+  font-weight: 600;
 }
 
 .example-box ul,
 .example-box ol {
-  margin-left: 25px; /* jarak dari teks ke border kiri */
-  margin-bottom: 15px; /* beri ruang bawah biar lega */
+  margin-left: 20px;
+  margin-bottom: 15px;
 }
 
-.example-box li {
-  margin-bottom: 6px; /* beri jarak antar item list */
-}
-
-/* Pembungkus luar (border dashed biru) */
-.form-container {
-  border: 1.5px dashed #0078d4;
-  border-radius: 10px;
-  padding: 2rem;
-  background: #f9fafc;
-  display: flex;
-  justify-content: center;
-}
-
-/* Form di dalamnya */
 .form-box {
-  display: flex;
-  border: 1.5px dashed #0078d4;
-  flex-direction: column;
-  gap: 1rem;
-  width: 100%;
-  max-width: 900px; /* supaya form tidak terlalu lebar */
-  background: #fff;
-  border-radius: 10px;
-  padding: 2rem;
-  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+  background-color: #f8f9fa;
+  padding: 20px;
+  border-radius: 8px;
+  margin-top: 15px;
 }
 
-/* Teks label */
-.form-box p {
-  margin: 0;
+.form-box .form-label {
   font-weight: 600;
+  margin-bottom: 5px;
   color: #333;
 }
 
-/* Input, select, textarea */
-.form-box input,
-.form-box select,
-.form-box textarea {
-  padding: 0.8rem;
-  border: 1px solid #ccc;
-  border-radius: 6px;
-  width: 100%;
-  font-size: 0.95rem;
-  transition: border-color 0.3s, box-shadow 0.3s;
-}
-
-.form-box input:focus,
-.form-box select:focus,
-.form-box textarea:focus {
-  border-color: #0078d4;
-  box-shadow: 0 0 0 3px rgba(0, 120, 212, 0.2);
-  outline: none;
-}
-
-.form-box textarea {
-  min-height: 100px;
-  resize: vertical;
-}
-
-/* Tombol */
-.form-box button {
-  background-color: #0078d4;
-  color: white;
-  border: none;
-  padding: 0.8rem 1rem;
-  border-radius: 6px;
+.form-box .btn-primary {
+  background-color: #1a8bbc;
+  border-color: #1a8bbc;
+  padding: 10px 25px;
   font-weight: 600;
-  cursor: pointer;
-  transition: background-color 0.3s;
 }
 
-.form-box button:hover {
-  background-color: #005fa3;
+.form-box .btn-primary:hover {
+  background-color: #156a94;
+  border-color: #156a94;
+}
+
+/* Tables */
+.table {
+  margin-top: 15px;
+}
+
+.table thead {
+  background: linear-gradient(to right, #1a8bbccd, #1a8bbc);
+  color: white;
+}
+
+.table th {
+  font-weight: 600;
+  padding: 12px;
+}
+
+.table td {
+  padding: 10px;
+}
+
+.card-practice {
+  background: linear-gradient(to right, #f64747, #d8cece);
+  color: white;
+  border-radius: 10px;
+  padding: 25px;
+  margin-bottom: 25px;
+}
+
+.card-practice h2 {
+  color: white;
+  font-weight: bold;
+  margin-bottom: 15px;
+  padding-bottom: 10px;
+  border-bottom: 2px solid rgba(255, 255, 255, 0.3);
+}
+
+.card-practice h4 {
+  margin-top: 15px;
+  margin-bottom: 10px;
+  font-weight: 600;
+}
+
+.card-practice ul {
+  margin-left: 20px;
 }
 
 .footer {
-  text-align: center;
-  padding: 1.5rem;
   background: linear-gradient(90deg, #6b5bff, #6ec9ff);
-  color: #fff;
+  color: white;
+  text-align: center;
+  padding: 25px;
+  border-radius: 10px;
+  margin-top: 25px;
 }
 
 .footer h2 {
-  margin-bottom: 0.5rem;
+  font-size: 1.8rem;
+  font-weight: bold;
+  margin-bottom: 15px;
 }
 
 .footer p {
-  font-size: 0.9rem;
+  font-size: 1rem;
+  line-height: 1.6;
+}
+
+@media (max-width: 768px) {
+  .container {
+    padding: 20px;
+  }
+
+  .main-header h1 {
+    font-size: 2rem;
+  }
+
+  pre {
+    font-size: 0.8rem;
+  }
 }
